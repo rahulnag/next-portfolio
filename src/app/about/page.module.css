@@ -1,0 +1,76 @@
+.skill-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skillcard {
+    display: flex;
+    flex-direction: column;
+    min-height: 8rem;
+    width: 12rem;
+    margin: 0.5rem;
+}
+
+.workExperienceHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.workExperienceCard {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+    max-width: 25rem;
+    min-height: 30rem;
+}
+
+.organizationNameImageHolder {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 5px 8px 0 8px;
+    align-items: center;
+}
+
+.organizationName {
+    text-align: center;
+    color: #fff;
+}
+
+.organizationImage {
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+}
+
+.positionName {
+    font-weight: 700;
+    color: var(--text-color)
+}
+
+.workTenure {
+    font-weight: 700;
+}
+
+.jobDescription {
+    /* color */
+}
+
+.workDetails li {
+    font-size: 1rem;
+    padding: 2px !important;
+}
+
+.collegeImage {
+    border-radius: 50%;
+}

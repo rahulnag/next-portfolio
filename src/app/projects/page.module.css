@@ -1,0 +1,38 @@
+.ProjectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.ProjectsImageDescHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 18rem;
+    min-height: 12rem;
+    margin: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.projectName {
+    color: var(--text-color);
+}
+
+.visitButton {
+    background-color: var(--primary-color);
+    outline: none;
+    border-radius: 3px;
+    border: 0;
+    padding: 7px;
+    color: #fff;
+}
+
+.ProjectDetailsHolder {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
