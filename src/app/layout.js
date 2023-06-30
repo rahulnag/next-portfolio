@@ -13,7 +13,7 @@ export const metadata = {
   description:
     "Rahul Nag, A highly experienced web developer with 6 year of experience",
   generator: "Next.js",
-  applicationName: "Next.js",
+  applicationName: "Rahul Nag Portfolio",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Next.js",
@@ -40,18 +40,18 @@ export const metadata = {
   //   telephone: false,
   // },
   // metadataBase: new URL("https://acme.com"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en-US",
-      "de-DE": "/de-DE",
-    },
-  },
+  // alternates: {
+  //   canonical: "/",
+  //   languages: {
+  //     "en-US": "/en-US",
+  //     "de-DE": "/de-DE",
+  //   },
+  // },
 
   openGraph: {
     title: "Rahul Nag",
     description: "A highly experienced web developer with 6 year of experience",
-    url: "https://www.rahulnag.in/",
+    url: "https://www.rahulnag.in",
     siteName: "Rahul Nag",
     images: [
       {

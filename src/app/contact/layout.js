@@ -4,7 +4,7 @@ export const metadata = {
   openGraph: {
     title: "Contact Rahul Nag",
     description: "A highly experienced web developer with 6 year of experience",
-    url: "https://www.rahulnag.in/contact/",
+    url: "https://www.rahulnag.in/contact",
     siteName: "Contact Rahul Nag",
     images: [
       {
