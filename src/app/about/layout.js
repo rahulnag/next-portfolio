@@ -9,7 +9,7 @@ export const metadata = {
     title: "About Rahul Nag",
     description: "A highly experienced web developer with 6 year of experience",
     url: "https://www.rahulnag.in/about/",
-    siteName: "Rahul Nag",
+    siteName: "About Rahul Nag",
     images: [
       {
         url: "https://rahulnag.in/profile.png",
