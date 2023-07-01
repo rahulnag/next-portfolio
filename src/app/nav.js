@@ -7,7 +7,7 @@ const Nav = () => {
     <nav>
       <div className={styles.logoHolder}>
         <Image
-          src={"/mylogo.png"}
+          src={"/logo.png"}
           height={60}
           width={60}
           priority
