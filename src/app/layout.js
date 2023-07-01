@@ -26,7 +26,7 @@ export const metadata = {
   ],
   authors: [{ name: "Rahul Nag" }],
   colorScheme: "light",
-  // themeColor: "black",
+  themeColor: "black",
   // themeColor: [
   //   { media: '(prefers-color-scheme: light)', color: 'cyan' },
   //   { media: '(prefers-color-scheme: dark)', color: 'black' },
@@ -92,7 +92,10 @@ export const metadata = {
   viewport: {
     width: "device-width",
     initialScale: 1,
-    maximumScale: 1,
+    maximumScale: 5,
+    // "user-scalable": "yes",
+    // user-scalable=yes (default) to allow the user to zoom in or out on the web page;
+    // user-scalable=no to prevent the user from zooming in or out.
   },
   verification: {
     google: "5KVnczAJCUTClb8IrXQuErHR2Dm2aXY4ruBS8_6VnOQ",
