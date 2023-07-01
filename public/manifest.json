@@ -1,6 +1,7 @@
 {
   "name": "Rahul Nag",
   "short_name": "Rahul",
+  "scope": "/",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",

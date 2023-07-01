@@ -29,7 +29,7 @@ const nextConfig = {
     ],
   },
   images: {
-    formats: ["image/webp"],
+    formats: ["image/mpeg"],
   },
 };
 
