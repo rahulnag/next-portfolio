@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className={styles.imageContainer}>
           <Image
-            src="/profile.mpeg"
+            src="/profile.webp"
             width={500}
             height={500}
             alt="Rahul Nag"
