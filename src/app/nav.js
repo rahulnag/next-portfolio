@@ -18,7 +18,11 @@ const Nav = () => {
       <div className={styles.navHolder}>
         {Object.keys(webcontent).map((page) => {
           return (
-            <Link href={webcontent[page].route} className={styles.NavLink}>
+            <Link
+              href={webcontent[page].route}
+              prefetch={true}
+              className={styles.NavLink}
+            >
               {page}
             </Link>
           );
