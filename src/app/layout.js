@@ -39,7 +39,7 @@ export const metadata = {
   //   address: false,
   //   telephone: false,
   // },
-  // metadataBase: new URL("https://acme.com"),
+  metadataBase: new URL("https://rahulnag.in"),
   // alternates: {
   //   canonical: "/",
   //   languages: {
