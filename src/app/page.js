@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className={styles.imageContainer}>
           <Image
-            src="/profile.webp"
+            src="/profile.gif"
             width={500}
             height={500}
             priority
