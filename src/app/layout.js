@@ -88,7 +88,7 @@ export const metadata = {
       url: "/logo.png",
     },
   },
-  manifest: "https://rahulnag.in/manifest.json",
+  manifest: "https://www.rahulnag.in/manifest.json",
   viewport: {
     width: "device-width",
     initialScale: 1,
