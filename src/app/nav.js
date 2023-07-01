@@ -10,6 +10,7 @@ const Nav = () => {
           src={"/mylogo.webp"}
           height={60}
           width={60}
+          priority
           className={styles.logo}
           alt={"Rahul Nag Logo"}
         />

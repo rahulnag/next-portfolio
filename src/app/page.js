@@ -17,6 +17,7 @@ export default function Home() {
             src="/profile.webp"
             width={500}
             height={500}
+            priority
             alt="Rahul Nag"
             className={styles.profileImage}
           />
