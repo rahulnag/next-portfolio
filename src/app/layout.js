@@ -115,6 +115,17 @@ export default function RootLayout({ children }) {
         <Nav />
         <div className="small-partition">{""}</div>
         {children}
+        <footer>
+          <p>Made with ♥ by Rahul Nag</p>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mr.rahulnag67@gmail.com&su=Looking for a web developer&body=Hello Rahul,"
+            target="_blank"
+          >
+            <button>Hire me</button>
+          </a>
+          <br />
+          <small>Copyright © rahulnag.in 2023.</small>
+        </footer>
       </body>
     </html>
   );

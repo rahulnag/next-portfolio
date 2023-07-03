@@ -6,13 +6,21 @@ const Skills = () => {
     return (
       <div className={"cards" + " " + styles.skillcard}>
         <span className="cardHeading">{skills.skillName}</span>
-        <Image
-          src={"/skills-image/" + skills.iconName + ".png"}
-          height={70}
-          width={70}
-          alt={skills.skillName}
-          loading="lazy"
-        />
+        <div className={styles.skillCardContent}>
+          <Image
+            src={"/skills-image/" + skills.iconName + ".png"}
+            height={70}
+            width={70}
+            alt={skills.skillName}
+            loading="lazy"
+            className={styles.skillLogo}
+          />
+
+          <div className={styles.skillExperience}>
+            <p>Exp.: {skills.experience}</p>
+            <p>Projects.: {skills.projects}</p>
+          </div>
+        </div>
       </div>
     );
   });

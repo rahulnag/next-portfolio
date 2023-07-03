@@ -36,6 +36,7 @@ footer {
   height: 6rem;
   text-align: center;
   margin-top: 10rem;
+  border-radius: 8px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -9,9 +9,30 @@
 .skillcard {
     display: flex;
     flex-direction: column;
-    min-height: 8rem;
-    width: 12rem;
+    min-height: 8.5rem;
+    width: 14rem;
     margin: 0.5rem;
+}
+
+.skillCardContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skillLogo {
+    flex: 0.8
+}
+
+.skillExperience {
+    font-style: italic;
+    flex: 1.2;
+}
+
+.skillExperience p {
+    font-size: 0.8rem;
+
 }
 
 .workExperienceHolder {

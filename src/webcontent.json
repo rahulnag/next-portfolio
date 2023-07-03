@@ -109,147 +109,225 @@
     "techknowledge": [
       {
         "skillName": "HTML5",
-        "iconName": "html"
+        "iconName": "html",
+        "experience": "6+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "CSS3",
-        "iconName": "css"
+        "iconName": "css",
+        "experience": "6+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "JavaScript",
-        "iconName": "javascript"
+        "iconName": "javascript",
+        "experience": "6+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "ReactJS",
-        "iconName": "reactjs"
+        "iconName": "reactjs",
+        "experience": "5+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "NextJS",
-        "iconName": "nextjs"
+        "iconName": "nextjs",
+        "experience": "2+ yrs",
+        "projects": "10+"
       },
       {
         "skillName": "NodeJS",
-        "iconName": "nodejs"
+        "iconName": "nodejs",
+        "experience": "1+ yrs",
+        "projects": "2+"
       },
       {
         "skillName": "PWA",
-        "iconName": "pwa"
+        "iconName": "pwa",
+        "experience": "3+ yrs",
+        "projects": "10+"
       },
       {
         "skillName": "NPM",
-        "iconName": "npm"
+        "iconName": "npm",
+        "experience": "5+ yrs",
+        "projects": "70+"
       },
       {
         "skillName": "Azure",
-        "iconName": "azure"
+        "iconName": "azure",
+        "experience": "2+ yrs",
+        "projects": "2"
       },
       {
         "skillName": "AWS",
-        "iconName": "aws"
+        "iconName": "aws",
+        "experience": "1 yrs",
+        "projects": "2+"
       },
       {
         "skillName": "Firebase",
-        "iconName": "firebase"
+        "iconName": "firebase",
+        "experience": "6+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "Docker",
-        "iconName": "docker"
+        "iconName": "docker",
+        "experience": "1 yrs",
+        "projects": "1"
       },
       {
         "skillName": "MaterialUI",
-        "iconName": "materialui"
+        "iconName": "materialui",
+        "experience": "5+ yrs",
+        "projects": "70+"
       },
       {
         "skillName": "Ant Design",
-        "iconName": "antd"
+        "iconName": "antd",
+        "experience": "5+ yrs",
+        "projects": "10+"
       },
       {
         "skillName": "React-Table",
-        "iconName": "reacttable"
+        "iconName": "reacttable",
+        "experience": "5+ yrs",
+        "projects": "10+"
       },
       {
         "skillName": "Amchart",
-        "iconName": "amcharts"
+        "iconName": "amcharts",
+        "experience": "5+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "Rechart",
-        "iconName": "recharts"
+        "iconName": "recharts",
+        "experience": "5+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "GitHub",
-        "iconName": "github"
+        "iconName": "github",
+        "experience": "5+ yrs",
+        "projects": "80+"
       },
       {
         "skillName": "BitBucket",
-        "iconName": "bitbucket"
+        "iconName": "bitbucket",
+        "experience": "5+ yrs",
+        "projects": "80+"
       },
       {
         "skillName": "Postman",
-        "iconName": "postman"
+        "iconName": "postman",
+        "experience": "5+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "Axios",
-        "iconName": "axios"
+        "iconName": "axios",
+        "experience": "5+ yrs",
+        "projects": "50+"
       },
       {
         "skillName": "Chart.JS",
-        "iconName": "chartjs"
+        "iconName": "chartjs",
+        "experience": "5+ yrs",
+        "projects": "10+"
       },
       {
         "skillName": "ExpressJS",
-        "iconName": "expressjs"
+        "iconName": "expressjs",
+        "experience": "1+ yrs",
+        "projects": "2+"
       },
       {
         "skillName": "Framer Motion",
-        "iconName": "framermotion"
+        "iconName": "framermotion",
+        "experience": "1+ yrs",
+        "projects": "3+"
       },
       {
         "skillName": "GitLab",
-        "iconName": "gitlab"
+        "iconName": "gitlab",
+        "experience": "5+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "JSON",
-        "iconName": "json"
+        "iconName": "json",
+        "experience": "5+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "React Router",
-        "iconName": "reactrouter"
+        "iconName": "reactrouter",
+        "experience": "5+ yrs",
+        "projects": "10+"
       },
       {
         "skillName": "Redux Toolkit",
-        "iconName": "redux"
+        "iconName": "redux",
+        "experience": "2+ yrs",
+        "projects": "10+"
+      },
+      {
+        "skillName": "Recoil JS",
+        "iconName": "recoil",
+        "experience": "2+ yrs",
+        "projects": "1+"
       },
       {
         "skillName": "Refine Dev",
-        "iconName": "refinedev"
+        "iconName": "refinedev",
+        "experience": "1+ yrs",
+        "projects": "1+"
       },
       {
         "skillName": "Supabase",
-        "iconName": "supabase"
+        "iconName": "supabase",
+        "experience": "1+ yrs",
+        "projects": "1+"
       },
       {
         "skillName": "VS Code",
-        "iconName": "vscode"
+        "iconName": "vscode",
+        "experience": "5+ yrs",
+        "projects": "100+"
       },
       {
         "skillName": "Chat GPT",
-        "iconName": "chatgpt"
+        "iconName": "chatgpt",
+        "experience": "3 months",
+        "projects": "1"
       },
       {
         "skillName": "Okta",
-        "iconName": "okta"
+        "iconName": "okta",
+        "experience": "3+ yrs",
+        "projects": "2+"
       },
       {
         "skillName": "Google Auth",
-        "iconName": "googleauth"
+        "iconName": "googleauth",
+        "experience": "5+ yrs",
+        "projects": "10+"
       },
       {
         "skillName": "Vercel",
-        "iconName": "vercel"
+        "iconName": "vercel",
+        "experience": "1+ yrs",
+        "projects": "3+"
       },
       {
         "skillName": "Netlify",
-        "iconName": "netlify"
+        "iconName": "netlify",
+        "experience": "3+ yrs",
+        "projects": "10+"
       }
     ],
     "educationalHeading": "Qualification",
