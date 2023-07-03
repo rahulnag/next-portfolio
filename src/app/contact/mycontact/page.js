@@ -1,7 +1,7 @@
-import React from "react";
-import webcontent from "@/webcontent.json";
-import styles from "./page.module.css";
-import SocialMediaLink from "@/components/SocialMediaLink";
+// import React from "react";
+// import webcontent from "@/webcontent.json";
+// import styles from "./page.module.css";
+// import SocialMediaLink from "@/components/SocialMediaLink";
 
 // export const metadata = {
 //   title: "Contact",
@@ -32,7 +32,7 @@ import SocialMediaLink from "@/components/SocialMediaLink";
 
 const page = () => {
   return (
-    <div className={styles.contactHolder}>
+    <div>
       <h1>HI........</h1>
     </div>
   );
