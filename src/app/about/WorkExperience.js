@@ -1,4 +1,3 @@
-import React from "react";
 import webcontent from "@/webcontent";
 import styles from "./page.module.css";
 import Image from "next/image";
