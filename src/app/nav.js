@@ -21,7 +21,7 @@ const Nav = () => {
           return (
             <Link
               href={webcontent[page].route}
-              prefetch={true}
+              // prefetch={true}
               className={styles.NavLink}
             >
               {page}
