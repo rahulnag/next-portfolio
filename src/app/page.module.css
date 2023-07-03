@@ -50,7 +50,7 @@
 
 .logo {
   animation: rotate-animation 5s infinite linear;
-
+  border-radius: 50%;
 }
 
 .homeButton {
