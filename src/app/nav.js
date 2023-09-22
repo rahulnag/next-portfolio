@@ -1,8 +1,12 @@
+'use client'
 import webcontent from "@/webcontent.json";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 const Nav = () => {
+  const pathname = usePathname();
   return (
     <nav>
       <div className={styles.logoHolder}>
@@ -21,15 +25,16 @@ const Nav = () => {
           return (
             <Link
               href={webcontent[page].route}
+              key={webcontent[page].route}
               prefetch={true}
-              className={styles.NavLink}
+              className={webcontent[page].route == pathname ? styles.activeNav : styles.NavLink}
             >
               {page}
             </Link>
           );
         })}
       </div>
-    </nav>
+    </nav >
   );
 };
 

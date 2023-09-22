@@ -18,6 +18,7 @@
 
 
 * {
+  /* The * means "all elements" (a universal selector), so we are setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers. */
   box-sizing: border-box;
   padding: 5px;
   margin: 0;
@@ -141,12 +142,21 @@ h5 {
   font-size: 1.2rem;
 }
 
+h6 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 1.1rem;
 }
 
 small {
   font-size: 0.5rem;
+}
+
+b,
+li {
+  padding: 0 !important;
 }
 
 nav {

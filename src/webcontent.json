@@ -2,8 +2,8 @@
   "home": {
     "route": "/",
     "username": "Rahul Nag",
-    "heading": "Hey There, I'm Rahul Nag",
-    "subheading": "A passionate self-taught frontend web developer. I am having an experience in building responsvie Web and Mobile applications with JavaScript / ReactJS and some other cool libraries and frameworks.",
+    "heading": "Namaste🙏 I'm Rahul Nag",
+    "subheading": "A passionate self-taught frontend web developer. I am having an experience in building responsive Web and Mobile applications with JavaScript, ReactJS & NextJS 13 and some other cool libraries and frameworks.",
     "socialMediaLinks": [
       { "name": "github", "link": "https://github.com/rahulnag" },
       { "name": "linkedin", "link": "https://www.linkedin.com/in/rahulnag/" },
@@ -16,57 +16,11 @@
 
     "achievements": {
       "title": "Achievements And Certifications 🏆 ",
-      "subtitle": "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-      "myachievements": [
-        {
-          "title": "Google Code-In Finalist",
-          "subtitle": "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-          "image": "codeInLogo.webp",
-          "footerLink": [
-            {
-              "name": "Certification",
-              "url": "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-            },
-            {
-              "name": "Award Letter",
-              "url": "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-            },
-            {
-              "name": "Google Code-in Blog",
-              "url": "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-            }
-          ]
-        },
-        {
-          "title": "Google Assistant Action",
-          "subtitle": "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-          "image": "googleAssistantLogo.webp",
-          "footerLink": [
-            {
-              "name": "View Google Assistant Action",
-              "url": "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-            }
-          ]
-        },
-
-        {
-          "title": "PWA Web App Developer",
-          "subtitle": "Completed Certifcation from SMIT for PWA Web App Development",
-          "image": "pwaLogo.webp",
-          "footerLink": [
-            { "name": "Certification", "url": "" },
-            {
-              "name": "Final Project",
-              "url": "https://pakistan-olx-1.firebaseapp.com/"
-            }
-          ]
-        }
-      ]
+      "subtitle": "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !"
     },
     "blogSection": {
       "title": "Blogs",
-      "subtitle": "I write Technical Blog On Frontend Related Stuffs aling with some Personal Experience in Tech",
+      "subtitle": "I write Technical Blog On Frontend Related Stuffs along with some Personal Experience in Tech",
       "myblogs": [
         {
           "url": "https://www.capscode.in/blog/how-to-detect-screen-orientation-using-javascript",
@@ -91,7 +45,7 @@
         {
           "url": "https://www.capscode.in/blog/array.flat-in-javascript",
           "title": "Array.flat() method In JavaScript",
-          "description": "In this article i will walk you through one of the important methods of Array in JavaScript i.e Array.flat method, and how to use it effieicntly"
+          "description": "In this article i will walk you through one of the important methods of Array in JavaScript i.e Array.flat method, and how to use it efficiently"
         }
       ]
     }
@@ -99,10 +53,11 @@
   "about": {
     "route": "/about",
     "heading": "What I do",
-    "subheading": "Currently I am working as a Lead Software Developer @Accenture, India and I spend most of my time in writing codes and in my free timing i write tech blogs for you.",
+    "subheading": "Currently I am working as a Frontend Developer @Accenture, India and I spend most of my time in writing codes , business logics and in my free timing i write tech articles.",
     "subsubheading": [
       "⚡ I develop fully responsive Front end / User Interfaces for your web and mobile applications",
       "⚡ I develop Progressive Web Applications ( PWA )",
+      "⚡ I develop fully scalable web apps with SEO more than 95+",
       "⚡ Integration of third party services such as Firebase/ Okta Authentication/ Google Auth etc..."
     ],
     "skillHeading": "My Skills",
@@ -335,7 +290,7 @@
       {
         "schoolName": "Haldia Institute of Technology",
         "image": "haldia.png",
-        "degreeName": "Bacheloer in Computer Science & Engineering",
+        "degreeName": "Bachelor in Computer Science & Engineering",
         "duration": "August 2013 - July 2017",
         "descBullets": [
           "Program Head of Computer Society of India student chapter",
@@ -343,37 +298,87 @@
           "Active volunteer at Photography Club"
         ],
         "highlights": [
-          "Conducted 1 week workshop on Android Application Development with the croud capacity of 100+ students"
+          "Conducted 1 week workshop on Android Application Development with the crowd capacity of 100+ students"
         ]
       }
     ],
     "workExperiencesHeading": "Experience",
     "workExperiences": [
       {
-        "role": "Frontend Development Consultant",
+        "role": "Frontend Development Specialist",
         "company": "Accenture, India",
         "companylogo": "accenture.png",
         "date": "Jan 2021 – Present",
-        "desc": "Currently developing reporting tool for Clorox in ReactJS which contains lot of Graph and Table with CRUD opeations.",
-        "descBullets": [
-          "Role: Lead Frontend Developer",
-          "Converting Figma into real Tech",
-          "Frontend Developer",
-          "Working with libraries/ framework like ReactJS(V18+, React-Table, Amcart, MaterialUI, ContextAPI, React-idle-timer",
-          "Azure and its configuration",
-          "Web Security",
-          "OktaAuth(SSO)"
+        "projectDetails":[
+          {
+            "projectName":"Clorox-Business Planning Hub",
+            "domain":"Retail",
+            "date":"Jan 2021 – Present",
+            "projectRole":"Frontend Developer and Deployment in Azure for Production and other environments",
+            "desc": "Developed a reporting tool where the end user can find their net sales and forecasting values for their past, current and financial budgets in the form of tables, charts and other visuals. This application ia having a side & top filter which is the backbone of the application and based on these custom filters user can filter the data based on Business Units, Projects & Divisions.",
+            "descBullets": [
+              "RBAC - Screen restriction based on the user role",
+              "Local caching so that APIs wont be called on route/page change",
+              "Azure app service deployment",
+              "Okta Authentication & Authorization (SSO)",
+              "Libraries/ framework: ReactJS(v18+), React-Table, Amcarts, Ant Design, MaterialUI, ContextAPI, Redux-Toolkit, React-idle-timer",
+              "Azure and its configuration",
+              "Web security & standards",
+              "Fully responsive web design",
+              "Agile model",
+              "Rest API integration and JSON structuring",
+              "Uploading after validation of excel template",
+              "Resetting of the auth token on every 25 mins by calling apis",
+              "Tools used: Target process, Jira"
+            ]
+          },
+          {
+            "projectName":"BI-Bot (internal project)",
+            "domain":"Business Intelligence | AI",
+            "date":"May 2023-present",
+            "projectRole":"Leading Frontend Development team and Deployment to production and other environments",
+            "desc": "BI Bot is a business bot powered by GenAI features, where the end user can type as ask question related to their business and the bot will give response in the form of text, charts, table and PowerBI dashboard",
+            "descBullets": [
+              "Currently working on a module where client can upload pdf, excel or any kind of document and then can able to ask question related to those docs",
+              "Runs for various client domains like Retail, LifeScience",
+              "Web security and web standards",
+              "Working with libraries/ framework like ReactJS(V18+)",
+              "Azure app service deployment",
+              "Azure devops for code management"
+            ]
+          }
         ]
+        
       },
       {
         "role": "Application Developer Specialist 1",
         "company": "IQVIA (ex. IMS Health)",
         "companylogo": "iqvia.png",
         "date": "Oct 2017 – Oct 2020",
-        "desc": "Joined as a Fresher and worked for clients like AMA, Siemens, Mylan BMS",
-        "descBullets": [
-          "Worked on modules of GoIQ web app & Roche Client in ReactJS, aclient dashboard application to do CRUD operation from UI",
-          "Worked in MDM for product support, Nucleus360"
+        "projectDetails":[
+          {
+            "projectName":"Master Data Management, UI Dev",
+            "domain":"Healthcare | Human Data Science",
+            "date":"Oct 2017 - Aug 2020",
+            "projectRole":"Worked on implementation team for enhancing the existing code base",
+            "desc": "Joined as a Fresher and worked for clients like AMA, Siemens, Mylan BMS",
+            "descBullets": [
+              "A client dashboard application with CRUD operation from UI",
+              "Worked in MDM for product support, Nucleus360",
+              "Dashboards for clinical data",
+              "Visual UI with charts, tables and compare charts and table options"
+            ]
+          },
+          {
+            "projectName":"GoIQ",
+            "domain":"Healthcare | Human Data Science",
+            "date":"Aug 2020 - Oct 2020",
+            "projectRole":"",
+            "desc": "Developed few module of GoIQ web app which was a internal news portal application.",
+            "descBullets": [
+              "Simple news website where user we have to fetch the news from an API endpoint and render it in the UI."
+            ]
+          }
         ]
       },
       {
@@ -381,9 +386,17 @@
         "company": "Tata Technologies Ltd, Jamshedpur",
         "companylogo": "tata.png",
         "date": "Jul 2016 – Aug 2016",
-        "desc": "Android app for online Appointment from doctor or to book the time slot whenever the time slot is available for the doctors in TATA Hospital.",
-        "descBullets": [
-          "Tech used are REST API's, OkHTTP, PhpMyAdmin, php, SQLite, Postman"
+        "projectDetails":[
+          {
+            "projectName":"",
+            "domain":"Healthcare",
+            "date":"Jul 2016 – Aug 2016",
+            "projectRole":"Intern",
+            "desc": "Android app for online Appointment from doctor or to book the time slot whenever the time slot is available for the doctors in TATA Hospital.",
+            "descBullets": [
+              "Tech used are REST API's, OkHTTP, PhpMyAdmin, php, SQLite, Postman"
+            ]
+          }
         ]
       }
     ]
@@ -475,8 +488,8 @@
       },
       {
         "image": "todo_project.JPG",
-        "projectName": "Dragable TODO",
-        "projectDesc": "Dragable TODO, where you can drag your task a/c to priority",
+        "projectName": "Draggable TODO",
+        "projectDesc": "Draggable TODO, where you can drag your task a/c to priority",
         "footerLink": {
           "name": "Visit Website",
           "url": "https://todobynag.netlify.app/"

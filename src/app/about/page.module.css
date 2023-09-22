@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     min-height: 8.5rem;
-    width: 14rem;
+    width: 13rem;
     margin: 0.5rem;
 }
 
@@ -47,6 +47,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: space-between;
     margin: 1rem;
     max-width: 25rem;
     min-height: 30rem;
@@ -76,22 +77,70 @@
 
 .positionName {
     font-weight: 700;
-    color: var(--text-color)
+    color: var(--text-color);
+    padding-bottom: 0;
 }
 
 .workTenure {
     font-weight: 700;
+    font-size: 0.8rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.jobDescription {
-    /* color */
-}
-
-.workDetails li {
-    font-size: 1rem;
+.workDetails {
     padding: 2px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+
 }
 
 .collegeImage {
     border-radius: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.projectDetailsHolder {
+    padding-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.projectName {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.projectDomain {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.projectDate {
+    font-size: 0.8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.projectRole {
+    font-size: 0.8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.projectDesc {
+    font-size: 0.8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.projectDescBullet {
+    font-size: 0.8rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }

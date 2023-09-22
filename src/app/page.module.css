@@ -15,6 +15,7 @@
 
 .imageContainer {
   flex: 1;
+  text-align: center;
 }
 
 .profileImage {
@@ -71,6 +72,18 @@
 }
 
 .NavLink {
+  color: var(--primary-color);
+  border: 0.1px solid var(--primary-color);
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 0.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.3rem;
+}
+
+
+.activeNav {
   color: #fff;
   background-color: var(--primary-color);
   margin-right: 5px;
@@ -79,6 +92,7 @@
   text-decoration: none;
   text-transform: uppercase;
   line-height: 1.3rem;
+  font-weight: 600;
 }
 
 .navHolder {
