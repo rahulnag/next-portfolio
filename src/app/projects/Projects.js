@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 const Projects = () => {
   return (
-    <div className={styles.ProjectsContainer}>
+    <div className={styles.ProjectsHolder}>
       {webcontent.projects.myprojects.map((project) => {
         return (
           <div className={styles.ProjectsImageDescHolder + " " + "cards"}>

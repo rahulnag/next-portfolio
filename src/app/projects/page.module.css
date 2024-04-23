@@ -1,9 +1,15 @@
 .ProjectsContainer {
+    padding: var(--page-padding);
+    padding-top: var(--page-top-padding);
+}
+
+.ProjectsHolder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
+
 }
 
 .ProjectsImageDescHolder {
@@ -14,6 +20,7 @@
     min-height: 12rem;
     margin: 0.8rem;
     margin-bottom: 0.8rem;
+    padding: 0.5rem;
 }
 
 .projectName {

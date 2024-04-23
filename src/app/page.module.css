@@ -6,6 +6,8 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: var(--page-padding);
+  padding-top: var(--page-top-padding);
 }
 
 .mainContainer {
@@ -52,6 +54,7 @@
 .logo {
   animation: rotate-animation 5s infinite linear;
   border-radius: 50%;
+  padding: 0.3rem;
 }
 
 .homeButton {
@@ -80,6 +83,8 @@
   text-decoration: none;
   text-transform: uppercase;
   line-height: 1.3rem;
+  height: 2rem;
+
 }
 
 
@@ -93,9 +98,12 @@
   text-transform: uppercase;
   line-height: 1.3rem;
   font-weight: 600;
+  height: 2rem;
+
 }
 
 .navHolder {
   display: flex;
   justify-content: center;
+  align-items: center;
 }

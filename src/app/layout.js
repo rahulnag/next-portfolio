@@ -124,7 +124,7 @@ export default function RootLayout({ children }) {
             <button>Hire me</button>
           </a>
           <br />
-          <small>Copyright © rahulnag.in 2023.</small>
+          <small>Copyright © rahulnag.in {new Date().getFullYear()}.</small>
         </footer>
       </body>
     </html>

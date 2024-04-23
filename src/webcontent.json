@@ -5,15 +5,32 @@
     "heading": "Namaste🙏 I'm Rahul Nag",
     "subheading": "A passionate self-taught frontend web developer. I am having an experience in building responsive Web and Mobile applications with JavaScript, ReactJS & NextJS 13 and some other cool libraries and frameworks.",
     "socialMediaLinks": [
-      { "name": "github", "link": "https://github.com/rahulnag" },
-      { "name": "linkedin", "link": "https://www.linkedin.com/in/rahulnag/" },
-      { "name": "gmail", "link": "mr.rahulnag67@gmail.com" },
-      { "name": "facebook", "link": "https://www.facebook.com/iamrahulnag" },
-      { "name": "blog", "link": "https://www.capscode.in/blog" },
-      { "name": "instagram", "link": "https://www.instagram.com/iamrahulnag" }
+      {
+        "name": "github",
+        "link": "https://github.com/rahulnag"
+      },
+      {
+        "name": "linkedin",
+        "link": "https://www.linkedin.com/in/rahulnag/"
+      },
+      {
+        "name": "gmail",
+        "link": "mr.rahulnag67@gmail.com"
+      },
+      {
+        "name": "facebook",
+        "link": "https://www.facebook.com/iamrahulnag"
+      },
+      {
+        "name": "blog",
+        "link": "https://www.capscode.in/blog"
+      },
+      {
+        "name": "instagram",
+        "link": "https://www.instagram.com/iamrahulnag"
+      }
     ],
     "resumeLink": "https://drive.google.com/file/d/1Nb8Dj0-ly_xb10PMKJ16uVOC17xVzvza/view?usp=sharing",
-
     "achievements": {
       "title": "Achievements And Certifications 🏆 ",
       "subtitle": "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !"
@@ -309,12 +326,12 @@
         "company": "Accenture, India",
         "companylogo": "accenture.png",
         "date": "Jan 2021 – Present",
-        "projectDetails":[
+        "projectDetails": [
           {
-            "projectName":"Clorox-Business Planning Hub",
-            "domain":"Retail",
-            "date":"Jan 2021 – Present",
-            "projectRole":"Frontend Developer and Deployment in Azure for Production and other environments",
+            "projectName": "Clorox-Business Planning Hub",
+            "domain": "Retail",
+            "date": "Jan 2021 – Present",
+            "projectRole": "Frontend Developer and Deployment in Azure for Production and other environments",
             "desc": "Developed a reporting tool where the end user can find their net sales and forecasting values for their past, current and financial budgets in the form of tables, charts and other visuals. This application ia having a side & top filter which is the backbone of the application and based on these custom filters user can filter the data based on Business Units, Projects & Divisions.",
             "descBullets": [
               "RBAC - Screen restriction based on the user role",
@@ -333,10 +350,10 @@
             ]
           },
           {
-            "projectName":"BI-Bot (internal project)",
-            "domain":"Business Intelligence | AI",
-            "date":"May 2023-present",
-            "projectRole":"Leading Frontend Development team and Deployment to production and other environments",
+            "projectName": "BI-Bot (internal project)",
+            "domain": "Business Intelligence | AI",
+            "date": "May 2023-present",
+            "projectRole": "Leading Frontend Development team and Deployment to production and other environments",
             "desc": "BI Bot is a business bot powered by GenAI features, where the end user can type as ask question related to their business and the bot will give response in the form of text, charts, table and PowerBI dashboard",
             "descBullets": [
               "Currently working on a module where client can upload pdf, excel or any kind of document and then can able to ask question related to those docs",
@@ -348,19 +365,18 @@
             ]
           }
         ]
-        
       },
       {
         "role": "Application Developer Specialist 1",
         "company": "IQVIA (ex. IMS Health)",
         "companylogo": "iqvia.png",
         "date": "Oct 2017 – Oct 2020",
-        "projectDetails":[
+        "projectDetails": [
           {
-            "projectName":"Master Data Management, UI Dev",
-            "domain":"Healthcare | Human Data Science",
-            "date":"Oct 2017 - Aug 2020",
-            "projectRole":"Worked on implementation team for enhancing the existing code base",
+            "projectName": "Master Data Management, UI Dev",
+            "domain": "Healthcare | Human Data Science",
+            "date": "Oct 2017 - Aug 2020",
+            "projectRole": "Worked on implementation team for enhancing the existing code base",
             "desc": "Joined as a Fresher and worked for clients like AMA, Siemens, Mylan BMS",
             "descBullets": [
               "A client dashboard application with CRUD operation from UI",
@@ -370,10 +386,10 @@
             ]
           },
           {
-            "projectName":"GoIQ",
-            "domain":"Healthcare | Human Data Science",
-            "date":"Aug 2020 - Oct 2020",
-            "projectRole":"",
+            "projectName": "GoIQ",
+            "domain": "Healthcare | Human Data Science",
+            "date": "Aug 2020 - Oct 2020",
+            "projectRole": "",
             "desc": "Developed few module of GoIQ web app which was a internal news portal application.",
             "descBullets": [
               "Simple news website where user we have to fetch the news from an API endpoint and render it in the UI."
@@ -386,12 +402,12 @@
         "company": "Tata Technologies Ltd, Jamshedpur",
         "companylogo": "tata.png",
         "date": "Jul 2016 – Aug 2016",
-        "projectDetails":[
+        "projectDetails": [
           {
-            "projectName":"",
-            "domain":"Healthcare",
-            "date":"Jul 2016 – Aug 2016",
-            "projectRole":"Intern",
+            "projectName": "",
+            "domain": "Healthcare",
+            "date": "Jul 2016 – Aug 2016",
+            "projectRole": "Intern",
             "desc": "Android app for online Appointment from doctor or to book the time slot whenever the time slot is available for the doctors in TATA Hospital.",
             "descBullets": [
               "Tech used are REST API's, OkHTTP, PhpMyAdmin, php, SQLite, Postman"
@@ -405,6 +421,33 @@
     "route": "/projects",
     "projectsHeading": "My Projects",
     "myprojects": [
+      {
+        "image": "capscode.png",
+        "projectName": "CapsCode",
+        "projectDesc": "EdTech Startup in Ranchi",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://www.capscode.in"
+        }
+      },
+      {
+        "image": "wdr.png",
+        "projectName": "Web Dev Resource",
+        "projectDesc": "Collection of 1000+ Web Dev Resources",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://web-dev-resource.capscode.in/"
+        }
+      },
+      {
+        "image": "mmp.png",
+        "projectName": "Mr and Mrs Property",
+        "projectDesc": "Real estate startup in Bengaluru",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://www.mrandmrsproperty.com"
+        }
+      },
       {
         "image": "vaccine_project.jpg",
         "projectName": "Covid Vaccine Tracker",
@@ -448,15 +491,6 @@
         "footerLink": {
           "name": "Visit Website",
           "url": "http://selflessfamily.in"
-        }
-      },
-      {
-        "image": "capscode_project.JPG",
-        "projectName": "CapsCode",
-        "projectDesc": "My startup website where i used to write blogs and provide other services",
-        "footerLink": {
-          "name": "Visit Website",
-          "url": "http://capscode.in"
         }
       },
       {

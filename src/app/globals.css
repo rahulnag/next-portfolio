@@ -4,6 +4,8 @@
   --secondary-color: #F43B86;
   --text-color: #000000;
   --card-background: #ffffff;
+  --page-top-padding: 3rem;
+  --page-padding: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +22,7 @@
 * {
   /* The * means "all elements" (a universal selector), so we are setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers. */
   box-sizing: border-box;
-  padding: 5px;
+  padding: 0px;
   margin: 0;
 }
 

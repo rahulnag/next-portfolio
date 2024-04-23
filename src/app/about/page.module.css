@@ -1,9 +1,15 @@
+.about-container {
+    padding: var(--page-padding);
+    padding-top: var(--page-top-padding);
+}
+
 .skill-card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+
 }
 
 .skillcard {
@@ -12,6 +18,7 @@
     min-height: 8.5rem;
     width: 13rem;
     margin: 0.5rem;
+    padding: 0.3rem
 }
 
 .skillCardContent {
@@ -19,6 +26,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .skillLogo {
@@ -28,6 +36,8 @@
 .skillExperience {
     font-style: italic;
     flex: 1.2;
+    margin-left: 0.3rem;
+
 }
 
 .skillExperience p {
@@ -51,6 +61,7 @@
     margin: 1rem;
     max-width: 25rem;
     min-height: 30rem;
+    padding: 1rem;
 }
 
 .organizationNameImageHolder {

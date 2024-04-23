@@ -7,8 +7,7 @@ import Education from "./Education";
 const About = () => {
   return (
     <>
-      <div className="small-partition">{""}</div>
-      <div>
+      <div className={styles['about-container']}>
         <h2>{webcontent.about.heading}</h2>
         <p className="subheading">{webcontent.about.subheading}</p>
         {webcontent.about.subsubheading.map((subheading) => {
