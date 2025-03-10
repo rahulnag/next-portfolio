@@ -3,7 +3,7 @@
     "route": "/",
     "username": "Rahul Nag",
     "heading": "Namaste🙏 I'm Rahul Nag",
-    "subheading": "A passionate self-taught frontend web developer. I am having an experience in building responsive Web and Mobile applications with JavaScript, ReactJS & NextJS 13 and some other cool libraries and frameworks.",
+    "subheading": "A passionate self-taught frontend web developer. I am having an experience in building fully responsive Web and Mobile applications with JavaScript, ReactJS & NextJS and some other cool libraries and frameworks.",
     "socialMediaLinks": [
       {
         "name": "github",
@@ -30,7 +30,7 @@
         "link": "https://www.instagram.com/iamrahulnag"
       }
     ],
-    "resumeLink": "https://drive.google.com/file/d/1Nb8Dj0-ly_xb10PMKJ16uVOC17xVzvza/view?usp=sharing",
+    "resumeLink": "https://drive.google.com/file/d/1vhRQXDfhjXsR80HtEIS-aOLP5Nzutrjr/view?usp=drive_link",
     "achievements": {
       "title": "Achievements And Certifications 🏆 ",
       "subtitle": "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !"
@@ -70,11 +70,11 @@
   "about": {
     "route": "/about",
     "heading": "What I do",
-    "subheading": "Currently I am working as a Frontend Developer @Accenture, India and I spend most of my time in writing codes , business logics and in my free timing i write tech articles.",
+    "subheading": "Currently I am working as a Frontend Developer @3Pillar Global, India and I spend most of my time in writing codes, business logics and in my free timing i write tech articles.",
     "subsubheading": [
       "⚡ I develop fully responsive Front end / User Interfaces for your web and mobile applications",
       "⚡ I develop Progressive Web Applications ( PWA )",
-      "⚡ I develop fully scalable web apps with SEO more than 95+",
+      "⚡ I develop fully scalable web apps with SEO score more than 95+",
       "⚡ Integration of third party services such as Firebase/ Okta Authentication/ Google Auth etc..."
     ],
     "skillHeading": "My Skills",
@@ -300,6 +300,12 @@
         "iconName": "netlify",
         "experience": "3+ yrs",
         "projects": "10+"
+      },
+      {
+        "skillName": "Storybook",
+        "iconName": "storybook",
+        "experience": "1+ yrs",
+        "projects": "2+"
       }
     ],
     "educationalHeading": "Qualification",
