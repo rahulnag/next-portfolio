@@ -2,7 +2,7 @@
   --background-color: #f8f8f8;
   --primary-color: #3D087B;
   --secondary-color: #F43B86;
-  --text-color: #000000;
+  --text-color: #212427;
   --card-background: #ffffff;
   --page-top-padding: 3rem;
   --page-padding: 2rem;
@@ -34,12 +34,11 @@ body {
 }
 
 footer {
-  background-color: #070117;
+  background-color: #0a0023;
   color: #fff;
   height: 6rem;
   text-align: center;
   margin-top: 10rem;
-  border-radius: 8px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -148,8 +147,9 @@ h6 {
   font-size: 1rem;
 }
 
+li,
 p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 small {
@@ -185,7 +185,7 @@ nav {
 }
 
 .subheading {
-  /* color: var(--secondary-color) */
+  color: var(--text-color);
   font-size: 1.3rem;
 }
 

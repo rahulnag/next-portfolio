@@ -13,8 +13,8 @@ const WrokExperience = () => {
                 <h4 className={styles.organizationName}>{exp.company}</h4>
                 <Image
                   src={`/work-image/${exp.companylogo}`}
-                  height={150}
-                  width={200}
+                  height={80}
+                  width={120}
                   className={styles.organizationImage}
                   alt={exp.company}
                 />
