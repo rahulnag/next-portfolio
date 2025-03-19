@@ -20,6 +20,7 @@ export default function Home() {
             priority
             alt="Rahul Nag"
             className={styles.profileImage}
+            unoptimized
           />
         </div>
       </main>

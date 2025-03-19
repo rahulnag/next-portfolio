@@ -328,15 +328,39 @@
     "workExperiencesHeading": "Experience",
     "workExperiences": [
       {
+        "role": "Senior Frontend Developer",
+        "company": "3Pillar Global",
+        "companylogo": "3pillar.png",
+        "date": "Jan 2021 – Present",
+        "projectDetails": [
+          {
+            "projectName": "IQUW - Project Q",
+            "domain": "Insurance",
+            "date": "May 2024 – Present",
+            "projectRole": "Senior web developer",
+            "desc": "Worked as a Frontend Developer to enhance digital platforms for policy management and risk assessment, improving overall user experience. Designed and implemented customizable UI components using React-Mosaic, enabling dynamic configurations based on user preferences and storing data efficiently in the database. Focused on developing scalable web applications, integrating third-party services, and ensuring seamless performance across various insurance products. Additionally, contributed to backend development by creating ExpressJS API endpoints to facilitate communication with iHUB APIs, optimizing data flow and system functionality.",
+            "descBullets": [
+              "Built tools for quote generation and claims processing, streamlining the insurance workflow.",
+              "Developed and enhanced digital platforms for policy management and risk assessment, improving user experience.",
+              "Built Storybook components for reusable UI elements, ensuring consistency across the application.",
+              "Designed highly customizable UI components using React-Mosaic, allowing users to configure layouts and store preferences in the database.",
+              "Created ExpressJS API endpoints for seamless integration with iHUB APIs, improving data retrieval and processing.",
+              "Developed visualization dashboards displaying insurance and broker data through charts, graphs, and tables.",
+              "Technologies/Libraries Used: ReactJS (V16+), Storybook, react-mosaic, react-movable, react-draggable, React hooks, Figma, React-Table, MaterialUI, Bootstrap5, Highchart, Azure,Axios, React-Router, NodeJS, ExpressJS"
+            ]
+          }
+        ]
+      },
+      {
         "role": "Frontend Development Specialist",
         "company": "Accenture, India",
         "companylogo": "accenture.png",
-        "date": "Jan 2021 – Present",
+        "date": "Jan 2021 – April 2024",
         "projectDetails": [
           {
             "projectName": "Clorox-Business Planning Hub",
             "domain": "Retail",
-            "date": "Jan 2021 – Present",
+            "date": "Jan 2021 – April 2024",
             "projectRole": "Frontend Developer and Deployment in Azure for Production and other environments",
             "desc": "Developed a reporting tool where the end user can find their net sales and forecasting values for their past, current and financial budgets in the form of tables, charts and other visuals. This application ia having a side & top filter which is the backbone of the application and based on these custom filters user can filter the data based on Business Units, Projects & Divisions.",
             "descBullets": [

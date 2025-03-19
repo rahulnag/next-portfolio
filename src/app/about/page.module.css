@@ -59,7 +59,7 @@
     flex: 1;
     justify-content: space-between;
     margin: 1rem;
-    max-width: 25rem;
+    min-width: 25rem;
     min-height: 30rem;
     padding: 1rem;
 }
@@ -82,7 +82,8 @@
 }
 
 .organizationImage {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 1rem;
     border: 1px solid var(--text-color);
 }
 
@@ -119,39 +120,39 @@
 }
 
 .projectName {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .projectDomain {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .projectDate {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .projectRole {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .projectDesc {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .projectDescBullet {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-top: 0;
     padding-bottom: 0;
 }
