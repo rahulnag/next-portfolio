@@ -11,7 +11,7 @@ const inter = Nunito({
 export const metadata = {
   title: "Rahul Nag",
   description:
-    "Rahul Nag, A highly experienced web developer with 6 year of experience",
+    "Rahul Nag, A highly experienced web developer with 7.6 years of experience",
   generator: "Next.js",
   applicationName: "Rahul Nag Portfolio",
   referrer: "origin-when-cross-origin",
@@ -50,7 +50,8 @@ export const metadata = {
 
   openGraph: {
     title: "Rahul Nag",
-    description: "A highly experienced web developer with 6 year of experience",
+    description:
+      "A highly experienced web developer with 7.6 years of experience",
     url: "https://www.rahulnag.in",
     siteName: "Rahul Nag",
     images: [
@@ -73,7 +74,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rahul Nag",
-    description: "A highly experienced web developer with 6 year of experience",
+    description:
+      "A highly experienced web developer with 7.6 years of experience",
     // siteId: "1467726470533754880",
     // creator: "@nextjs",
     // creatorId: "1467726470533754880",
