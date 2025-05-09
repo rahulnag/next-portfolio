@@ -23,6 +23,8 @@ export const metadata = {
     "CSS",
     "Redux",
     "Visulization UI",
+    "rahul nag",
+    "Rahul Nag",
   ],
   authors: [{ name: "Rahul Nag" }],
   colorScheme: "light",
