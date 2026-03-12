@@ -348,6 +348,22 @@
               "Developed visualization dashboards displaying insurance and broker data through charts, graphs, and tables.",
               "Technologies/Libraries Used: ReactJS (V16+), Storybook, react-mosaic, react-movable, react-draggable, React hooks, Figma, React-Table, MaterialUI, Bootstrap5, Highchart, Azure,Axios, React-Router, NodeJS, ExpressJS"
             ]
+          },
+          {
+            "projectName": "",
+            "domain": "",
+            "date": "",
+            "projectRole": "Senior web developer",
+            "desc": "",
+            "descBullets": []
+          },
+          {
+            "projectName": "",
+            "domain": "",
+            "date": "",
+            "projectRole": "Senior web developer",
+            "desc": "",
+            "descBullets": []
           }
         ]
       },
@@ -452,9 +468,18 @@
     "projectsHeading": "My Projects",
     "myprojects": [
       {
+        "image": "smartfilereader.png",
+        "projectName": "Smart File Reader",
+        "projectDesc": "AI powered, No local storage, No registration required",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://smart-file-reader.vercel.app/"
+        }
+      },
+      {
         "image": "capscode.png",
         "projectName": "CapsCode",
-        "projectDesc": "EdTech Startup in Ranchi",
+        "projectDesc": "EdTech Startup in Jharkhand, India",
         "footerLink": {
           "name": "Visit Website",
           "url": "https://www.capscode.in"
@@ -470,6 +495,15 @@
         }
       },
       {
+        "image": "scenical.png",
+        "projectName": "Scenical",
+        "projectDesc": "Manpower, Automation and Digital Services startup in Bhopal, MP",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://scenical.vercel.app/"
+        }
+      },
+      {
         "image": "mmp.png",
         "projectName": "Mr and Mrs Property",
         "projectDesc": "Real estate startup in Bengaluru",
@@ -479,7 +513,25 @@
         }
       },
       {
-        "image": "vaccine_project.jpg",
+        "image": "quevent.png",
+        "projectName": "Quevent",
+        "projectDesc": "Event Management Platform",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://quevents.netlify.app/"
+        }
+      },
+      {
+        "image": "billsplita.png",
+        "projectName": "Bill Splita",
+        "projectDesc": "Split bills with your friends",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://billsplita.netlify.app/"
+        }
+      },
+      {
+        "image": "vaccine.png",
         "projectName": "Covid Vaccine Tracker",
         "projectDesc": "Live covid vaccine tracker with voice enabled notification",
         "footerLink": {
@@ -488,7 +540,7 @@
         }
       },
       {
-        "image": "myemoji_project.JPG",
+        "image": "myemoji.png",
         "projectName": "My Emoji",
         "projectDesc": "Contains 1000+ Emojis Which You Can Copy and Use It Anywhere You Want",
         "footerLink": {
@@ -497,7 +549,7 @@
         }
       },
       {
-        "image": "colorscube_project.JPG",
+        "image": "colorscube.png",
         "projectName": "Colors Cube",
         "projectDesc": "Developer's choice amazing colors(neon, mate finish, solid, cool etc.)",
         "footerLink": {
@@ -506,7 +558,7 @@
         }
       },
       {
-        "image": "iris_project.JPG",
+        "image": "iris.png",
         "projectName": "IRIS Legal",
         "projectDesc": "Website for a Delhi based startup who provide Legal Solutions",
         "footerLink": {
@@ -515,16 +567,16 @@
         }
       },
       {
-        "image": "selfless_project.JPG",
+        "image": "selfless.png",
         "projectName": "Selfless Family",
         "projectDesc": "Website for a startup who provide info for Job Openings and help fresher to get JOB",
         "footerLink": {
           "name": "Visit Website",
-          "url": "http://selflessfamily.in"
+          "url": "https://selflessfamily.netlify.app/"
         }
       },
       {
-        "image": "glassy_project.JPG",
+        "image": "glassy.png",
         "projectName": "Glassy Effect",
         "projectDesc": "NPM package to get glassy effect in your project",
         "footerLink": {
@@ -533,7 +585,7 @@
         }
       },
       {
-        "image": "jsonformatter_project.JPG",
+        "image": "jsonformatter.png",
         "projectName": "JSON Formatter",
         "projectDesc": "A online JSON formatter tool to format your JSON data",
         "footerLink": {
@@ -542,7 +594,7 @@
         }
       },
       {
-        "image": "covid_project.JPG",
+        "image": "covid.png",
         "projectName": "COVID Case Tracker",
         "projectDesc": "Website to track COVID cases in INDIA, developed when we have 2 case of covid19",
         "footerLink": {
@@ -551,7 +603,7 @@
         }
       },
       {
-        "image": "todo_project.JPG",
+        "image": "todo.png",
         "projectName": "Draggable TODO",
         "projectDesc": "Draggable TODO, where you can drag your task a/c to priority",
         "footerLink": {
@@ -560,30 +612,12 @@
         }
       },
       {
-        "image": "covid_project.JPG",
-        "projectName": "CCL Learning",
-        "projectDesc": "A simple website for my friend,to get the youtube video",
-        "footerLink": {
-          "name": "Visit Website",
-          "url": "https://cclkk.netlify.app/#/"
-        }
-      },
-      {
-        "image": "deliverytalla_project.JPG",
+        "image": "deliverytalla.png",
         "projectName": "DeliveryTalla",
         "projectDesc": "Webapp from where you can order stuffs from your nearby location and track it",
         "footerLink": {
           "name": "Visit Website",
           "url": "https://deliverytalla.netlify.app/#/"
-        }
-      },
-      {
-        "image": "covid_project.JPG",
-        "projectName": "COVID Case Tracker",
-        "projectDesc": "Website to track COVID cases in INDIA, developed when we have 2 case of covid19",
-        "footerLink": {
-          "name": "Visit Website",
-          "url": "https://rahulnag.github.io/covid19/"
         }
       }
     ]
@@ -591,7 +625,7 @@
   "contact": {
     "route": "/contact",
     "title": "Contact Me ☎️",
-    "subtitle": "Want to hire me | Discuss a project | Need a website | Need a freelancer",
+    "subtitle": "Want to hire me | Discuss a project | Need a website | Career guidance",
     "number": "+91-8986774801",
     "email": "mr.rahulnag67@gmail.com"
   }
