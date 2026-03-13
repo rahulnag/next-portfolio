@@ -470,7 +470,7 @@
       {
         "image": "smartfilereader.png",
         "projectName": "Smart File Reader",
-        "projectDesc": "AI powered, No local storage, No registration required",
+        "projectDesc": "AI powered, No server storage, No registration required",
         "footerLink": {
           "name": "Visit Website",
           "url": "https://smart-file-reader.vercel.app/"
@@ -522,6 +522,15 @@
         }
       },
       {
+        "image": "pratistha.png",
+        "projectName": "Pratistha",
+        "projectDesc": "Banquet hall booking platform",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://pratistha.vercel.app/"
+        }
+      },
+      {
         "image": "billsplita.png",
         "projectName": "Bill Splita",
         "projectDesc": "Split bills with your friends",
@@ -564,6 +573,15 @@
         "footerLink": {
           "name": "Visit Website",
           "url": "http://irislegal.in"
+        }
+      },
+      {
+        "image": "expensebuddy.png",
+        "projectName": "Expense Buddy",
+        "projectDesc": "Expense tracking web app",
+        "footerLink": {
+          "name": "Visit Website",
+          "url": "https://myexpensebuddy.vercel.app/"
         }
       },
       {
