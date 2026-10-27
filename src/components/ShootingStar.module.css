@@ -1,0 +1,144 @@
+/* Colors come from the --star-* tokens in the globals.css theme blocks (light + dark) */
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* The flight line: starts beyond the top-right corner and skims down-left above the hero image */
+.path {
+  position: absolute;
+  top: -2%;
+  right: -12%;
+  transform: rotate(165deg);
+  transform-origin: 0 50%;
+}
+
+/* Timing — one constant-speed glide; fade, tail and burn-out run on their own tracks */
+.sky {
+  --star-duration: 1.9s;
+  --star-delay: 1.2s;
+}
+
+/* Mover: only translates, at a constant speed, so it never pauses mid-flight */
+.star {
+  position: absolute;
+  display: block;
+  width: 18rem;
+  height: 0.16rem;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation:
+    fly var(--star-duration) var(--star-delay) linear forwards,
+    fade var(--star-duration) var(--star-delay) linear forwards;
+}
+
+/* Tail: fades from transparent into the bright head on the right end */
+.star::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(var(--star-flare), 0.35) 35%,
+      rgba(var(--star-glow), 0.9) 75%,
+      var(--star-tail));
+  box-shadow: 0 0 0.5rem rgba(var(--star-glow), calc(var(--star-glow-strength) * 0.6));
+  transform-origin: 100% 50%;
+  animation: tail var(--star-duration) var(--star-delay) linear forwards;
+}
+
+/* Head: the brightest point, which swells slightly and burns out while still moving */
+.star::after {
+  content: "";
+  position: absolute;
+  right: -0.25rem;
+  top: 50%;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-top: -0.275rem;
+  border-radius: 50%;
+  background: var(--star-core);
+  box-shadow:
+    0 0 0.4rem 0.15rem var(--star-core),
+    0 0 0.8rem 0.3rem rgba(var(--star-glow), 1),
+    0 0 1.6rem 0.5rem rgba(var(--star-glow), var(--star-glow-strength)),
+    0 0 3rem 1rem rgba(var(--star-glow), 0.55),
+    0 0 5rem 1.8rem rgba(var(--star-flare), 0.35);
+  animation: burn var(--star-duration) var(--star-delay) linear forwards;
+}
+
+@keyframes fly {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(110vmax);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  10%,
+  72% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* tail stretches out on entry and shrinks as the star breaks up */
+@keyframes tail {
+  0% {
+    transform: scaleX(0.15);
+  }
+
+  25%,
+  70% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0.1);
+  }
+}
+
+@keyframes burn {
+
+  0%,
+  65% {
+    transform: scale(1);
+  }
+
+  85% {
+    transform: scale(1.35);
+  }
+
+  100% {
+    transform: scale(0.4);
+  }
+}
+
+/* Portrait screens: the image sits on top, so dive through the open text area below it */
+@media (orientation: portrait) {
+  .path {
+    top: 38%;
+    right: -20%;
+    transform: rotate(135deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sky {
+    display: none;
+  }
+}

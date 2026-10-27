@@ -1,8 +1,80 @@
 .contactHolder {
-    height: 70vh;
-    text-align: center;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contactCard {
+    width: 100%;
+    max-width: 44rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.contactCard :global(.eyebrow) {
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 3.4rem;
+}
+
+.contactLinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 0.8rem;
+    width: 100%;
+    margin: 0.6rem 0;
+}
+
+.contactLink {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--card-border);
+    background: var(--chip-background);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    word-break: break-word;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.contactLink:hover {
+    border-color: var(--card-border-hover);
+    transform: translateY(-2px);
+}
+
+.contactLabel {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-violet);
+}
+
+.aiRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1.6rem;
+    border-top: 1px dashed var(--card-border);
+    width: 100%;
+}
+
+.aiRow p {
+    color: var(--muted-text);
+    font-size: 1.05rem;
 }

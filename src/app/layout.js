@@ -1,87 +1,92 @@
 import "./globals.css";
-import { Nunito } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import Nav from "./nav";
+import NeuralBackground from "@/components/NeuralBackground";
+import RevealObserver from "@/components/RevealObserver";
+import ChatWidget from "@/components/ChatWidget";
+import { themeInitScript } from "@/components/ThemeToggle";
+import webcontent from "@/webcontent.json";
+import {
+  SITE_URL,
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  personJsonLd,
+} from "@/lib/site";
 
-const inter = Nunito({
-  weight: ["300", "400", "700"],
-  style: ["normal", "italic"],
+const inter = Inter({ subsets: ["latin"], display: "swap" });
+const heading = Space_Grotesk({
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-heading",
+});
+const mono = JetBrains_Mono({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mono",
 });
 
+const TITLE = "Rahul Nag | Senior Frontend Developer — React, Next.js & Generative AI";
+
 export const metadata = {
-  title: "Rahul Nag",
-  description:
-    "Rahul Nag, A highly experienced web developer with 7.6 years of experience",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: TITLE,
+    template: "%s | Rahul Nag",
+  },
+  description: SITE_DESCRIPTION,
   generator: "Next.js",
   applicationName: "Rahul Nag Portfolio",
   referrer: "origin-when-cross-origin",
   keywords: [
-    "Next.js",
-    "React",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Redux",
-    "Visulization UI",
-    "rahul nag",
     "Rahul Nag",
+    "rahul nag",
+    "Rahul Nag developer",
+    "Rahul Nag frontend developer",
+    "Rahul Nag portfolio",
+    "rahulnag.in",
+    "Senior Frontend Developer",
+    "React developer India",
+    "Next.js developer",
+    "Generative AI UI",
+    "Data visualization",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Redux",
+    "CapsCode",
   ],
-  authors: [{ name: "Rahul Nag" }],
-  colorScheme: "light",
-  themeColor: "black",
-  // themeColor: [
-  //   { media: '(prefers-color-scheme: light)', color: 'cyan' },
-  //   { media: '(prefers-color-scheme: dark)', color: 'black' },
-  // ],
+  authors: [{ name: "Rahul Nag", url: SITE_URL }],
   creator: "Rahul Nag",
   publisher: "Rahul Nag",
-
-  // formatDetection: {
-  //   email: false,
-  //   address: false,
-  //   telephone: false,
-  // },
-  metadataBase: new URL("https://rahulnag.in"),
-  // alternates: {
-  //   canonical: "/",
-  //   languages: {
-  //     "en-US": "/en-US",
-  //     "de-DE": "/de-DE",
-  //   },
-  // },
-
+  alternates: { canonical: "/" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Rahul Nag",
-    description:
-      "A highly experienced web developer with 7.6 years of experience",
-    url: "https://www.rahulnag.in",
-    siteName: "Rahul Nag",
-    images: [
-      {
-        url: "https://rahulnag.in/profile.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://rahulnag.in/profile.png",
-        width: 1800,
-        height: 1600,
-        alt: "Rahul Nag",
-      },
-    ],
+    title: TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    images: [{ url: "/profile.png", width: 500, height: 500, alt: "Rahul Nag" }],
     locale: "en_US",
-    type: "website",
-    authors: ["Rahul Nag"],
+    type: "profile",
+    firstName: "Rahul",
+    lastName: "Nag",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Rahul Nag",
-    description:
-      "A highly experienced web developer with 7.6 years of experience",
-    // siteId: "1467726470533754880",
-    // creator: "@nextjs",
-    // creatorId: "1467726470533754880",
-    images: ["https://rahulnag.in/profile.png"],
+    card: "summary",
+    title: TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/profile.png"],
   },
   icons: {
     icon: "/profile.png",
@@ -92,19 +97,9 @@ export const metadata = {
       url: "/logo.png",
     },
   },
-  manifest: "https://www.rahulnag.in/manifest.json",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    // "user-scalable": "yes",
-    // user-scalable=yes (default) to allow the user to zoom in or out on the web page;
-    // user-scalable=no to prevent the user from zooming in or out.
-  },
+  manifest: "/manifest.json",
   verification: {
     google: "5KVnczAJCUTClb8IrXQuErHR2Dm2aXY4ruBS8_6VnOQ",
-    // yandex: "yandex",
-    // yahoo: "yahoo",
     other: {
       me: ["mr.rahulnag67@gmail.com", "www.rahulnag.in"],
     },
@@ -112,24 +107,66 @@ export const metadata = {
   category: "Portfolio",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f6f5fb" },
+    { media: "(prefers-color-scheme: dark)", color: "#06040f" },
+  ],
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: SITE_NAME,
+      description: SITE_DESCRIPTION,
+      inLanguage: "en",
+      publisher: { "@id": `${SITE_URL}/#person` },
+    },
+    personJsonLd(),
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${heading.variable} ${mono.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        {/* Before first paint: apply the saved/system theme and mark JS as available (for scroll-reveal) */}
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <NeuralBackground />
         <Nav />
-        <div className="small-partition">{""}</div>
-        {children}
+        <main id="main">{children}</main>
         <footer>
           <p>Made with ♥ by Rahul Nag</p>
           <a
+            className="btn btn-primary"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=mr.rahulnag67@gmail.com&su=Looking for a web developer&body=Hello Rahul,"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <button>Hire me</button>
+            Hire me
           </a>
-          <br />
           <small>Copyright © rahulnag.in {new Date().getFullYear()}.</small>
         </footer>
+        <RevealObserver />
+        <ChatWidget config={webcontent.home.chatAssistant} />
       </body>
     </html>
   );

@@ -4,6 +4,12 @@
     "username": "Rahul Nag",
     "heading": "Namaste🙏 I'm Rahul Nag",
     "subheading": "A passionate self-taught frontend web developer. I am having an experience in building fully responsive Web and Mobile applications with JavaScript, ReactJS & NextJS and some other cool libraries and frameworks.",
+    "roles": [
+      "Senior Frontend Developer",
+      "React & Next.js Engineer",
+      "Generative AI Interface Builder",
+      "Data Visualization Specialist"
+    ],
     "socialMediaLinks": [
       {
         "name": "github",
@@ -65,6 +71,19 @@
           "description": "In this article i will walk you through one of the important methods of Array in JavaScript i.e Array.flat method, and how to use it efficiently"
         }
       ]
+    },
+    "chatAssistant": {
+      "title": "Ask about Rahul",
+      "subtitle": "AI assistant · answers from Rahul’s portfolio",
+      "greeting": "Hi! I’m Rahul’s portfolio assistant. Ask me anything about his experience, projects, skills or how to get in touch.",
+      "suggestedQuestions": [
+        "What is Rahul working on currently?",
+        "Summarize his work experience",
+        "Has he built Generative AI products?",
+        "Which industry domains has he worked in?",
+        "What are his strongest technical skills?",
+        "How can I hire or contact him?"
+      ]
     }
   },
   "about": {
@@ -78,234 +97,361 @@
       "⚡ Integration of third party services such as Firebase/ Okta Authentication/ Google Auth etc..."
     ],
     "skillHeading": "My Skills",
+    "skillCategories": [
+      {
+        "id": "ai",
+        "title": "AI & Generative AI",
+        "description": "LLM-powered products, chat interfaces and document Q&A"
+      },
+      {
+        "id": "frameworks",
+        "title": "Frameworks & State Management",
+        "description": "Building scalable, component-driven applications"
+      },
+      {
+        "id": "dataviz",
+        "title": "Data Visualization",
+        "description": "Dashboards, charts and reporting UIs"
+      },
+      {
+        "id": "ui",
+        "title": "UI Libraries & Design Systems",
+        "description": "Reusable, accessible component systems"
+      },
+      {
+        "id": "core",
+        "title": "Core Web",
+        "description": "The fundamentals of the web platform"
+      },
+      {
+        "id": "backend",
+        "title": "Backend, APIs & BaaS",
+        "description": "APIs, integrations and backend services"
+      },
+      {
+        "id": "cloud",
+        "title": "Cloud & DevOps",
+        "description": "Deployment, hosting and containers"
+      },
+      {
+        "id": "auth",
+        "title": "Authentication & Security",
+        "description": "SSO, identity and access control"
+      },
+      {
+        "id": "tools",
+        "title": "Tools & Version Control",
+        "description": "Day-to-day engineering workflow"
+      }
+    ],
     "techknowledge": [
+      {
+        "skillName": "Generative AI Interfaces",
+        "iconName": "",
+        "experience": "2+ yrs",
+        "projects": "2+",
+        "category": "ai"
+      },
+      {
+        "skillName": "LLM Chat & Conversational UI",
+        "iconName": "",
+        "experience": "2+ yrs",
+        "projects": "2+",
+        "category": "ai"
+      },
+      {
+        "skillName": "RAG / Document Q&A",
+        "iconName": "",
+        "experience": "1+ yrs",
+        "projects": "2+",
+        "category": "ai"
+      },
+      {
+        "skillName": "Prompt Engineering",
+        "iconName": "",
+        "experience": "2+ yrs",
+        "projects": "3+",
+        "category": "ai"
+      },
+      {
+        "skillName": "Google Gemini API",
+        "iconName": "",
+        "experience": "1+ yrs",
+        "projects": "2+",
+        "category": "ai"
+      },
+      {
+        "skillName": "AI-assisted Development",
+        "iconName": "",
+        "experience": "1+ yrs",
+        "projects": "5+",
+        "category": "ai"
+      },
       {
         "skillName": "HTML5",
         "iconName": "html",
         "experience": "6+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "core"
       },
       {
         "skillName": "CSS3",
         "iconName": "css",
         "experience": "6+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "core"
       },
       {
         "skillName": "JavaScript",
         "iconName": "javascript",
         "experience": "6+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "core"
       },
       {
         "skillName": "ReactJS",
         "iconName": "reactjs",
         "experience": "5+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "frameworks"
       },
       {
         "skillName": "NextJS",
         "iconName": "nextjs",
         "experience": "2+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "frameworks"
       },
       {
         "skillName": "NodeJS",
         "iconName": "nodejs",
         "experience": "1+ yrs",
-        "projects": "2+"
+        "projects": "2+",
+        "category": "backend"
       },
       {
         "skillName": "PWA",
         "iconName": "pwa",
         "experience": "3+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "core"
       },
       {
         "skillName": "NPM",
         "iconName": "npm",
         "experience": "5+ yrs",
-        "projects": "70+"
+        "projects": "70+",
+        "category": "tools"
       },
       {
         "skillName": "Azure",
         "iconName": "azure",
         "experience": "2+ yrs",
-        "projects": "2"
+        "projects": "2",
+        "category": "cloud"
       },
       {
         "skillName": "AWS",
         "iconName": "aws",
         "experience": "1 yrs",
-        "projects": "2+"
+        "projects": "2+",
+        "category": "cloud"
       },
       {
         "skillName": "Firebase",
         "iconName": "firebase",
         "experience": "6+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "backend"
       },
       {
         "skillName": "Docker",
         "iconName": "docker",
         "experience": "1 yrs",
-        "projects": "1"
+        "projects": "1",
+        "category": "cloud"
       },
       {
         "skillName": "MaterialUI",
         "iconName": "materialui",
         "experience": "5+ yrs",
-        "projects": "70+"
+        "projects": "70+",
+        "category": "ui"
       },
       {
         "skillName": "Ant Design",
         "iconName": "antd",
         "experience": "5+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "ui"
       },
       {
         "skillName": "React-Table",
         "iconName": "reacttable",
         "experience": "5+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "ui"
       },
       {
         "skillName": "Amchart",
         "iconName": "amcharts",
         "experience": "5+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "dataviz"
       },
       {
         "skillName": "Rechart",
         "iconName": "recharts",
         "experience": "5+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "dataviz"
       },
       {
         "skillName": "GitHub",
         "iconName": "github",
         "experience": "5+ yrs",
-        "projects": "80+"
+        "projects": "80+",
+        "category": "tools"
       },
       {
         "skillName": "BitBucket",
         "iconName": "bitbucket",
         "experience": "5+ yrs",
-        "projects": "80+"
+        "projects": "80+",
+        "category": "tools"
       },
       {
         "skillName": "Postman",
         "iconName": "postman",
         "experience": "5+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "backend"
       },
       {
         "skillName": "Axios",
         "iconName": "axios",
         "experience": "5+ yrs",
-        "projects": "50+"
+        "projects": "50+",
+        "category": "backend"
       },
       {
         "skillName": "Chart.JS",
         "iconName": "chartjs",
         "experience": "5+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "dataviz"
       },
       {
         "skillName": "ExpressJS",
         "iconName": "expressjs",
         "experience": "1+ yrs",
-        "projects": "2+"
+        "projects": "2+",
+        "category": "backend"
       },
       {
         "skillName": "Framer Motion",
         "iconName": "framermotion",
         "experience": "1+ yrs",
-        "projects": "3+"
+        "projects": "3+",
+        "category": "ui"
       },
       {
         "skillName": "GitLab",
         "iconName": "gitlab",
         "experience": "5+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "tools"
       },
       {
         "skillName": "JSON",
         "iconName": "json",
         "experience": "5+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "core"
       },
       {
         "skillName": "React Router",
         "iconName": "reactrouter",
         "experience": "5+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "frameworks"
       },
       {
         "skillName": "Redux Toolkit",
         "iconName": "redux",
         "experience": "2+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "frameworks"
       },
       {
         "skillName": "Recoil JS",
         "iconName": "recoil",
         "experience": "2+ yrs",
-        "projects": "1+"
+        "projects": "1+",
+        "category": "frameworks"
       },
       {
         "skillName": "Refine Dev",
         "iconName": "refinedev",
         "experience": "1+ yrs",
-        "projects": "1+"
+        "projects": "1+",
+        "category": "frameworks"
       },
       {
         "skillName": "Supabase",
         "iconName": "supabase",
         "experience": "1+ yrs",
-        "projects": "1+"
+        "projects": "1+",
+        "category": "backend"
       },
       {
         "skillName": "VS Code",
         "iconName": "vscode",
         "experience": "5+ yrs",
-        "projects": "100+"
+        "projects": "100+",
+        "category": "tools"
       },
       {
         "skillName": "Chat GPT",
         "iconName": "chatgpt",
         "experience": "3 months",
-        "projects": "1"
+        "projects": "1",
+        "category": "ai"
       },
       {
         "skillName": "Okta",
         "iconName": "okta",
         "experience": "3+ yrs",
-        "projects": "2+"
+        "projects": "2+",
+        "category": "auth"
       },
       {
         "skillName": "Google Auth",
         "iconName": "googleauth",
         "experience": "5+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "auth"
       },
       {
         "skillName": "Vercel",
         "iconName": "vercel",
         "experience": "1+ yrs",
-        "projects": "3+"
+        "projects": "3+",
+        "category": "cloud"
       },
       {
         "skillName": "Netlify",
         "iconName": "netlify",
         "experience": "3+ yrs",
-        "projects": "10+"
+        "projects": "10+",
+        "category": "cloud"
       },
       {
         "skillName": "Storybook",
         "iconName": "storybook",
         "experience": "1+ yrs",
-        "projects": "2+"
+        "projects": "2+",
+        "category": "ui"
       }
     ],
     "educationalHeading": "Qualification",

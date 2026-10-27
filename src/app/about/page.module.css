@@ -1,161 +1,587 @@
 .about-container {
-    padding: var(--page-padding);
-    padding-top: var(--page-top-padding);
     color: var(--text-color)
 }
 
-.skill-card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+.pageTitle {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
 
+.intro .subheading {
+    max-width: 52rem;
+}
+
+.serviceList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.serviceList li {
+    position: relative;
+    font-size: 1.05rem;
+    padding: 1rem 1.2rem 1rem 2.6rem !important;
+}
+
+.serviceList li::before {
+    content: "";
+    position: absolute;
+    left: 1.1rem;
+    top: 1.55rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background: var(--gradient);
+    box-shadow: 0 0 0.8rem var(--secondary-color);
+}
+
+.section {
+    margin-top: 6rem;
+    scroll-margin-top: 5rem;
+}
+
+.sectionHeaderRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.sectionHeaderRow :global(.section-subtitle) {
+    flex: 1 1 24rem;
+}
+
+/* ===== Skills accordion ===== */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.accordionItem {
+    overflow: hidden;
+}
+
+.accordionAI {
+    background:
+        linear-gradient(var(--card-solid), var(--card-solid)) padding-box,
+        var(--gradient) border-box;
+    border: 1px solid transparent;
+}
+
+.accordionSummary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 1.4rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.accordionSummary::-webkit-details-marker {
+    display: none;
+}
+
+.accordionIndex {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.9rem;
+    color: var(--accent-violet);
+}
+
+.accordionTitleBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+}
+
+.accordionTitle {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.accordionDesc {
+    font-size: 0.95rem;
+    color: var(--muted-text);
+}
+
+.chevron {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-right: 2px solid var(--muted-text);
+    border-bottom: 2px solid var(--muted-text);
+    transform: rotate(45deg) translateY(-0.15rem);
+    transition: transform .3s ease;
+    flex-shrink: 0;
+}
+
+.accordionItem[open] .chevron {
+    transform: rotate(-135deg);
+}
+
+.accordionItem[open] .skillGrid {
+    animation: unfold .45s cubic-bezier(.2, .7, .2, 1);
+}
+
+@keyframes unfold {
+    from {
+        opacity: 0;
+        transform: translateY(-0.6rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.skillGrid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 0.7rem;
+    padding: 0 1.4rem 1.4rem;
 }
 
 .skillcard {
     display: flex;
-    flex-direction: column;
-    min-height: 8.5rem;
-    width: 13rem;
-    margin: 0.5rem;
-    padding: 0.3rem
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.75rem 0.9rem !important;
+    border-radius: 0.75rem;
+    border: 1px solid var(--card-border);
+    background: var(--chip-background);
+    transition: border-color .25s ease, transform .25s ease;
+}
+
+.skillcard:hover {
+    border-color: var(--card-border-hover);
+    transform: translateY(-2px);
 }
 
 .skillCardContent {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    min-width: 0;
 }
 
 .skillLogo {
-    flex: 0.8
+    width: 2.6rem;
+    height: 2.6rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.skillGlyph {
+    width: 2.6rem;
+    height: 2.6rem;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 0.6rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(135deg, #3D087B, #7c3aed 55%, #F43B86);
+    box-shadow: 0 0 1rem rgba(124, 58, 237, 0.35);
+}
+
+.skillName {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.3;
 }
 
 .skillExperience {
-    font-style: italic;
-    flex: 1.2;
-    margin-left: 0.3rem;
-
+    font-family: var(--font-mono), monospace;
+    font-size: 0.8rem;
+    color: var(--muted-text);
 }
 
-.skillExperience p {
-    font-size: 0.9rem;
-
-}
-
-.workExperienceHolder {
+/* ===== Experience timeline ===== */
+.timeline {
+    list-style: none;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-left: 2.2rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.45rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(var(--accent-violet), var(--secondary-color), var(--accent-cyan), transparent);
+}
+
+.timelineItem {
+    position: relative;
+}
+
+.timelineNode {
+    position: absolute;
+    left: -2.2rem;
+    top: 1.8rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--background-color);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 0 0.3rem rgba(244, 59, 134, 0.15), 0 0 1rem var(--secondary-color);
+}
+
+.timelineItem:first-child .timelineNode {
+    animation: node-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes node-pulse {
+    50% {
+        box-shadow: 0 0 0 0.6rem rgba(244, 59, 134, 0), 0 0 1.4rem var(--secondary-color);
+    }
 }
 
 .workExperienceCard {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
-    margin: 1rem;
-    min-width: 25rem;
-    min-height: 30rem;
-    padding: 1rem;
+    gap: 0.9rem;
+    padding: 1.3rem 1.4rem;
 }
 
-.organizationNameImageHolder {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    height: 6rem;
+.workHeader {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-radius: 8px;
-    padding: 5px 8px 0 8px;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.organizationName {
-    text-align: center;
-    color: #fff;
+.logoTile {
+    width: 4.5rem;
+    height: 3rem;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 0.6rem;
+    background: #fff;
+    border: 1px solid var(--card-border);
+    overflow: hidden;
 }
 
-.organizationImage {
-    /* border-radius: 50%; */
-    border-radius: 1rem;
-    border: 1px solid var(--text-color);
-    max-height: 4.5rem;
-    max-width: 10rem;
+.organizationImage,
+.logoTile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.25rem;
+}
+
+.workTitleBlock {
+    flex: 1 1 14rem;
+    min-width: 0;
 }
 
 .positionName {
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--text-color);
-    padding-bottom: 0;
+    line-height: 1.3;
+}
+
+.organizationName {
+    font-size: 1rem;
+    color: var(--muted-text);
+    line-height: 1.4;
 }
 
 .workTenure {
-    font-weight: 700;
-    font-size: 0.8rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.85rem;
+    color: var(--accent-violet);
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--card-border);
+    white-space: nowrap;
 }
 
-.workDetails {
-    padding: 2px !important;
-    padding-top: 0;
-    padding-bottom: 0;
-
+.workSummary {
+    font-size: 1.05rem;
+    color: var(--muted-text);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.collegeImage {
+.chipRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.domainChip {
+    color: #fff;
+    background: linear-gradient(110deg, #3D087B, #7c3aed);
+    border-color: transparent;
+}
+
+.workFooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding-top: 0.9rem;
+    border-top: 1px dashed var(--card-border);
+}
+
+.projectCount {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.85rem;
+    color: var(--muted-text);
+    flex: 1 1 14rem;
+}
+
+.readMore {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 2.6rem;
+    padding: 0 1.1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--link-color);
+    background: var(--chip-background);
+    border: 1px solid var(--card-border);
+    transition: border-color .2s ease, gap .2s ease;
+}
+
+.readMore:hover {
+    border-color: var(--card-border-hover);
+    gap: 0.7rem;
+}
+
+/* ===== Experience detail dialog ===== */
+.dialog {
+    margin: auto;
+    width: min(52rem, calc(100vw - 2rem));
+    max-height: min(85vh, 60rem);
+    padding: 0;
+    border: 1px solid var(--card-border-hover);
+    border-radius: 1.2rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.dialog[open] {
+    display: flex;
+    animation: dialog-in .35s cubic-bezier(.2, .7, .2, 1);
+}
+
+.dialog::backdrop {
+    background: rgba(6, 4, 15, 0.6);
+    backdrop-filter: blur(6px);
+}
+
+@keyframes dialog-in {
+    from {
+        opacity: 0;
+        transform: translateY(1.5rem) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.dialogInner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: inherit;
+}
+
+.dialogHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 1.4rem;
+    border-bottom: 1px solid var(--card-border);
+    background: linear-gradient(110deg, rgba(124, 58, 237, 0.12), rgba(244, 59, 134, 0.08));
+}
+
+.dialogHeader>div:nth-child(2) {
+    flex: 1;
+    min-width: 0;
+}
+
+.dialogTitle {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.dialogMeta {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.9rem;
+    color: var(--muted-text);
+}
+
+.closeButton {
+    width: 2.6rem;
+    height: 2.6rem;
+    flex-shrink: 0;
     border-radius: 50%;
-    padding-top: 0;
-    padding-bottom: 0;
+    border: 1px solid var(--card-border);
+    background: var(--card-background);
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
-.projectDetailsHolder {
-    padding-left: 15px;
-    padding-top: 0;
-    padding-bottom: 0;
+.closeButton:hover {
+    border-color: var(--card-border-hover);
+}
+
+.dialogBody {
+    overflow-y: auto;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.projectBlock {
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--card-border);
+    background: var(--card-background);
 }
 
 .projectName {
-    font-size: 1rem;
-    font-weight: 600;
-    padding-top: 0;
-    padding-bottom: 0;
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
 }
 
-.projectDomain {
-    font-size: 1rem;
-    font-weight: 500;
-    padding-top: 0;
-    padding-bottom: 0;
+.projectMeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1rem;
 }
 
-.projectDate {
-    font-size: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
+.projectMeta dt {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-violet);
 }
 
-.projectRole {
-    font-size: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
+.projectMeta dd {
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .projectDesc {
+    font-size: 1.05rem;
+}
+
+.detailLabel {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-violet);
+    margin: 1.1rem 0 0.5rem;
+}
+
+.bulletList {
+    padding-left: 1.2rem !important;
+}
+
+.bulletList li {
     font-size: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-bottom: 0.3rem;
+}
+
+.bulletList li::marker {
+    color: var(--secondary-color);
 }
 
 .projectDescBullet {
     font-size: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
+}
+
+/* ===== Education ===== */
+.educationGrid {
+    display: grid;
+    gap: 1rem;
+}
+
+.educationCard {
+    padding: 1.4rem;
+}
+
+.educationCard .bulletList {
+    margin-top: 1rem;
+}
+
+.collegeImage {
+    border-radius: 50%;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+@media all and (max-width: 580px) {
+    .pageTitle {
+        font-size: 3rem;
+    }
+
+    .timeline {
+        padding-left: 1.6rem;
+    }
+
+    .timeline::before {
+        left: 0.3rem;
+    }
+
+    .timelineNode {
+        left: -1.6rem;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .accordionSummary {
+        padding: 1rem;
+        gap: 0.7rem;
+    }
+
+    .accordionSummary :global(.chip) {
+        display: none;
+    }
+
+    .skillGrid {
+        padding: 0 1rem 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    }
+
+    .dialog {
+        width: 100vw;
+        max-height: 92vh;
+        margin-bottom: 0;
+        border-radius: 1.2rem 1.2rem 0 0;
+    }
 }

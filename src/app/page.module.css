@@ -1,30 +1,108 @@
 .main {
-  min-height: 80vh;
-  width: 100vw;
+  min-height: 92vh;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 3rem;
   padding: var(--page-padding);
-  padding-top: var(--page-top-padding);
+  padding-top: calc(var(--page-top-padding) + 4rem);
 }
 
 .mainContainer {
-  flex: 1;
-  text-align: center;
-  color: var(--text-color)
+  flex: 1 1 32rem;
+  color: var(--text-color);
+  /* transform-only entrance: fading text from opacity 0 would delay Largest Contentful Paint */
+  animation: slide-in .9s cubic-bezier(.2, .7, .2, 1) both;
+}
+
+.mainContainer h1 {
+  font-size: 4.2rem;
+}
+
+.roleLine {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  min-height: 2.6em;
+  margin: 1rem 0 1.2rem;
+  line-height: 1.3;
 }
 
 .imageContainer {
-  flex: 1;
-  text-align: center;
+  flex: 1 1 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: rise-in 1.1s .15s cubic-bezier(.2, .7, .2, 1) both;
+}
+
+.profileRing {
+  position: relative;
+  padding: 0.5rem;
+  border-radius: 50%;
+  isolation: isolate;
+}
+
+.profileRing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #7c3aed, #F43B86, #22d3ee, #7c3aed);
+  animation: rotate-animation 6s linear infinite;
+  z-index: -1;
+}
+
+.profileRing::after {
+  content: "";
+  position: absolute;
+  inset: -2rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.35), transparent 65%);
+  filter: blur(20px);
+  z-index: -2;
+  animation: breathe 5s ease-in-out infinite;
 }
 
 .profileImage {
-  height: 30rem;
-  width: 30rem;
+  display: block;
+  height: 26rem;
+  width: 26rem;
   border-radius: 50%;
+  background: var(--background-color);
+}
+
+.orbit {
+  position: absolute;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 50%;
+  border: 1px dashed var(--card-border-hover);
+  animation: rotate-animation 24s linear infinite;
+}
+
+.orbitDot {
+  position: absolute;
+  top: -0.4rem;
+  left: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  box-shadow: 0 0 1rem var(--secondary-color);
+}
+
+.orbitDotAlt {
+  top: auto;
+  bottom: -0.4rem;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 1rem var(--accent-cyan);
 }
 
 @keyframes rotate-animation {
@@ -41,71 +119,208 @@
   }
 }
 
+@keyframes breathe {
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(1.5rem);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.homeButton {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.statsSection {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+
+.statCard {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.statValue {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.domainRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.domainLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  margin-right: 0.4rem;
+}
+
+/* ===== Nav ===== */
 .logoHolder {
   background-color: #fff;
   border-radius: 50%;
   width: 3rem;
+  height: 3rem;
   padding: 0px;
-  margin-left: 5px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px var(--card-border), 0 0 1.2rem rgba(124, 58, 237, 0.35);
 }
 
 .logo {
   animation: rotate-animation 5s infinite linear;
   border-radius: 50%;
   padding: 0.3rem;
-}
-
-.homeButton {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.homeButton button {
-  background-color: var(--primary-color);
-  border-radius: 8px;
-  padding: 12px;
-  outline: none;
-  border: none;
-  margin: 12px;
-  color: #fff;
-}
-
-.NavLink {
-  color: var(--primary-color);
-  border: 0.1px solid var(--primary-color);
-  margin-right: 5px;
-  border-radius: 5px;
-  padding: 0.4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 1.3rem;
-  height: 2rem;
-
-}
-
-
-.activeNav {
-  color: #fff;
-  background-color: var(--primary-color);
-  margin-right: 5px;
-  border-radius: 5px;
-  padding: 0.4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 1.3rem;
-  font-weight: 600;
-  height: 2rem;
-
+  width: 100%;
+  height: 100%;
 }
 
 .navHolder {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: var(--card-background);
+}
+
+.NavLink,
+.activeNav {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.6rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  transition: color .2s ease, background-color .2s ease;
+}
+
+.NavLink {
+  color: var(--muted-text);
+}
+
+.NavLink:hover {
+  color: var(--text-color);
+  background: var(--chip-background);
+}
+
+.activeNav {
+  color: #fff;
+  background: linear-gradient(110deg, #3D087B, #7c3aed);
+  font-weight: 600;
+}
+
+@media all and (max-width: 680px) {
+  .main {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: calc(var(--page-top-padding) + 3rem);
+  }
+
+  .mainContainer {
+    flex-basis: auto;
+  }
+
+  .mainContainer h1 {
+    font-size: 3.4rem;
+  }
+
+  .homeButton {
+    justify-content: center;
+  }
+
+  .profileImage {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .orbit {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .domainRow,
+  .mainContainer :global(.social-row) {
+    justify-content: center;
+  }
+
+  .NavLink,
+  .activeNav {
+    padding: 0 0.7rem;
+  }
+}
+
+@media all and (max-width: 380px) {
+
+  .NavLink,
+  .activeNav {
+    padding: 0 0.5rem;
+    letter-spacing: 0.02em;
+  }
 }

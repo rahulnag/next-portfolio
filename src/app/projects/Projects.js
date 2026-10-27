@@ -3,33 +3,42 @@ import Image from "next/image";
 import styles from "./page.module.css";
 const Projects = () => {
   return (
-    <div className={styles.ProjectsHolder}>
-      {webcontent.projects.myprojects.map((project) => {
+    <ul className={styles.ProjectsHolder}>
+      {webcontent.projects.myprojects.map((project, i) => {
         return (
-          <div className={styles.ProjectsImageDescHolder + " " + "cards"}>
-            <div>
+          <li
+            key={project.projectName}
+            className={styles.ProjectsImageDescHolder + " " + "cards"}
+            data-reveal
+            style={{ "--d": i % 3 }}
+          >
+            <div className={styles.imageFrame}>
               <Image
                 src={`/project-image/${project.image}`}
-                height={150}
-                width={100}
-                quality={100}
-                style={{ width: "100%", borderRadius: "15px" }}
-                alt={project.projectName}
+                height={225}
+                width={400}
+                quality={90}
+                sizes="(max-width: 680px) 100vw, 22rem"
+                className={styles.projectImage}
+                alt={`${project.projectName} website screenshot`}
               />
             </div>
             <div className={styles.ProjectDetailsHolder}>
-              <h5 className={styles.projectName}>{project.projectName}</h5>
+              <h2 className={styles.projectName}>{project.projectName}</h2>
               <p>{project.projectDesc}</p>
-              <a href={project.footerLink.url}>
-                <button className={styles.visitButton}>
-                  {project.footerLink.name}
-                </button>
+              <a
+                href={project.footerLink.url}
+                className={styles.visitButton}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.footerLink.name} <span aria-hidden="true">↗</span>
               </a>
             </div>
-          </div>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 };
 

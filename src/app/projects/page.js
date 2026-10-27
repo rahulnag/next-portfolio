@@ -1,10 +1,13 @@
 import Projects from "./Projects";
 import webcontent from "@/webcontent.json";
-import styles from './page.module.css'
 const MyProjects = () => {
   return (
-    <div className={styles.ProjectsContainer}>
-      <h2>{webcontent.projects.projectsHeading}</h2>
+    <div className="container">
+      <p className="eyebrow">built & shipped</p>
+      <h1 className="section-title">{webcontent.projects.projectsHeading}</h1>
+      <p className="section-subtitle">
+        Products, startup websites, tools and open-source packages designed and developed by Rahul Nag.
+      </p>
       <Projects />
     </div>
   );
